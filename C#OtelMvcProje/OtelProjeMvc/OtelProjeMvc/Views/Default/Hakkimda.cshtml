@@ -1,0 +1,160 @@
+﻿@using OtelProjeMvc.Models.Entity
+@model List<TblHakkimda>
+@{
+    ViewBag.Title = "Hakkimda";
+    Layout = "~/Views/Shared/_OtelGoruntu.cshtml";
+}
+
+<section class="w3l-breadcrumb">
+    <div class="breadcrum-bg py-sm-5 py-4">
+        <div class="container py-lg-3">
+            <h2>Hakkımızda</h2>
+            <p><a href="/AnaSayfa/Index/">Anasayfa</a> &nbsp; / &nbsp; Hakkımızda</p>
+        </div>
+    </div>
+</section>
+@foreach (var x in Model)
+{
+    <div class="w3l-about-us best-rooms py-5">
+        <div class="container py-lg-5 py-sm-4">
+            <div class="maghny-gd-1">
+                <div class="row about-text">
+                    <div class="col-lg-6">
+                        <h3 class="title-big">
+                          @x.Hakkimda1
+                        </h3>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            @x.Hakkimda2
+                        </p>
+                     
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="maghny-gd-1 col-lg-4 col-md-6">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius">
+                                <img class="img-fluid" src="~/hotels-starter/assets/images/about1.jpg">
+                                <figcaption class="w3set-hny">
+                                    <div>
+                                        <h4>En Ferah<span>Odalar</span></h4>
+                                        <p>Kahvaltı ve Akşam Yemeği</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="maghny-gd-1 col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius">
+                                <img class="img-fluid" src="~/hotels-starter/assets/images/about2.jpg">
+                                <figcaption class="w3set-hny">
+                                    <div>
+                                        <h4>Spa and Sauna</h4>
+                                        <p>Her Gün Açık</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="maghny-gd-1 col-lg-4 col-md-6 mt-lg-0 mt-4">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius">
+                                <img class="img-fluid" src="~/hotels-starter/assets/images/about3.jpg">
+                                <figcaption class="w3set-hny">
+                                    <div>
+                                        <h4>En Tercih Edilen Oda</h4>
+                                        <p>Hoş Görünüm</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="w3-about-2" id="features">
+        <div class="w3-services-ab py-5">
+            <div class="container py-lg-4 py-md-3">
+                <div class="title-section">
+                    <div class="title-line">
+                    </div>
+                </div>
+                <div class="row w3-services-grids">
+                    <div class="col-lg-9 w3-services-right-grid pl-lg-5 mx-auto">
+                        <h4 class="mb-md-5 mb-4">Önemli olan tek bir an vardır, o da şu an içinde bulunduğunuz andır.</h4>
+                        <div class="fea-gd-vv row">
+                            <div class="col-md-6">
+                                <div class="float-lt feature-gd">
+                                    <div class="icon"> <span class="fa fa-file-text-o" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Sınırsız içecek</h5>
+                                        <p>
+                                            Otelimizin en üst katında yer alan Mvc Bar ile  keyifli akşamlarda seçkin kokteyl, 
+                                            içecekler ve lezzetli aperatifler ile damaklarınızda bağımlılık yaratacaktır.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-md-0 mt-4">
+                                <div class="float-mid feature-gd">
+                                    <div class="icon"> <span class="fa fa-trophy" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Bisiklet Turu</h5>
+                                        <p>
+                                           Otelimiz Mvc 'de bisikletleri kullanarak sizlere farklı rotalarda bisiklet sürme keyfini yaşatıyoruz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 pt-md-2">
+                                <div class="float-rt feature-gd">
+                                    <div class="icon"> <span class="fa fa-clone" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Wifi Alanları</h5>
+                                        <p>
+                                            Tüm tesis boyunca hızlı ve kesintisiz kablosuz kapsama sağlamak için ileri teknoloji kullanmaktadır.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 pt-md-2">
+                                <div class="float-lt feature-gd">
+                                    <div class="icon"> <span class="fa fa-bullseye" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Yüzme Havuzu</h5>
+                                        <p>
+                                            Havuz bar, gün boyu sıcak soğuk içecekler ve zengin atıştırmalık seçenekleriyle hizmetinizdedir.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team -->
+    @Html.Action("Ekibimiz","Default")
+    <!-- team -->
+    <section class="w3l-stats">
+        <div class="main-w3 py-5">
+            <div class="container py-lg-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 title">
+                        <h3 class="title-big">@x.Hakkimda3</h3>
+                        <p class="mt-4">
+                            @x.Hakkimda4
+                        </p>
+                    </div>
+                @Html.Action("İstatistik","Default")
+                </div>
+            </div>
+        </div>
+    </section>
+    @Html.Action("Referans","Default")
+}

@@ -1,0 +1,30 @@
+﻿@using OtelProjeMvc.Models.Entity
+@model List<TblOnRezervasyon>
+@{
+    ViewBag.Title = "Rezervasyonlarimiz";
+    Layout = "~/Views/Shared/_MisafirrLayout.cshtml";
+}
+
+<h2>Rezervasyonlarimiz</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Misafir Ad Soyad</th>
+        <th>Giriş Tarihi</th>
+        <th>Çıkış Tarihi</th>
+        <th>Kişi</th>
+        <th>Detaylar</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+    <tr>
+        <td>@x.AdSoyad</td>
+        <td>@(((DateTime)x.GirisTarih).ToString("dd-MMM-yyyy"))</td>
+        <td>@(((DateTime)x.CikisTarih).ToString("dd-MMM-yyyy"))</td>
+        <td>@x.Kisi</td>
+        <td><a href="#" class="btn btn-primary">Detaylar</a></td>
+
+    </tr>
+    }
+</table>
+
